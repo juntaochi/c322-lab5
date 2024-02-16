@@ -45,11 +45,20 @@
     </table>
 
     <script>
-       let ducks = [];
+       let ducks = [
+        { id: 1, type: "Mallard" },
+        { id: 2, type: "Mallard" },
+        { id: 3, type: "Mallard" },
+        { id: 4, type: "Redhead" },
+        { id: 5, type: "Mallard" },
+        { id: 6, type: "Redhead" },
+        { id: 7, type: "Mallard" },
+        { id: 8, type: "Mallard" },
+        { id: 9, type: "Mallard" },
+        { id: 10, type: "Redhead" }
+       ];
        async function getAll() {
-        let response = await fetch("http://localhost:8080");
-        let result = await response.json();
-        return result;
+        let host = "http://localhost:8080";
        }
 
       async function search() {    
